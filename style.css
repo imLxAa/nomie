@@ -333,6 +333,10 @@ header #burger .bar{
         grid-column: span 2;
         background-position: center top;
     }
+
+    #box{
+        grid-template-columns: 1fr;
+    }
 }
 
 @media all and (max-width: 500px)
