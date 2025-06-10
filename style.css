@@ -180,22 +180,30 @@ header #burger .bar{
     text-shadow: 1px 1px 2px #272727;
 }
 
-#box{
+.box{
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 40px;
     gap: 80px;
 }
 
-#box img{
+.box a{
+    text-decoration: none;
+}
+
+.box img{
     width: 100%;
 }
 
 .gbox{
     display: grid;
     grid-template-columns: 1fr;
-    gap: 80px;
 }
+
+.gbox a:nth-child(2){
+    align-self: end;
+}
+
 
 .slide1 {
     display: flex;
@@ -334,8 +342,12 @@ header #burger .bar{
         background-position: center top;
     }
 
-    #box{
+    .box{
         grid-template-columns: 1fr;
+    }
+
+    .gbox{
+        gap: 80px;
     }
 }
 
