@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Nomie</title>
+    </head>
+    <body>
+        <div id="menu-mobile">
+            <nav>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#products">PRODUCTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="slide" id="home">
+            <header>
+                <div id="logo">
+                    <img src="images/nomiefinilogo.svg" alt="Logo Nomie">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#products">PRODUCTS</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <div id="social"><img src="images/insta.svg" alt="insta"></div>
+                <div id="burger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </header>
+            <div class="container">
+                <div id="b1" class="boite"></div>
+                <div id="b2" class="boite">
+                    <div id="logo-centre">
+                        <img src="images/nomiefinilogo.svg" alt="Logo Nomie">
+                        <h3>Créateur de mode</h3>
+                    </div>
+                </div>
+                <div id="b3" class="boite"></div>
+            </div>
+        </div>
+        <div class="slide" id="about">
+            <h3> Who the fuck</h3>
+            <h3>is nomie ?!</h3>
+        </div>
+        <div class="slide" id="video">
+            <div id="video-fond">
+                <video src="images/Lithe-FallBack(Visualizer).mp4" muted autoplay loop></video>
+            </div>
+        </div>
+            <div class="slide" id="pres">
+                <div class="container-flex">
+                    <div class="gauche"></div>
+                    <div class="droite">
+                        <div class="texte">
+                            <p>Né dans la province du Hainaut en Belgique, plus précisément à Leuze-en-Hainaut, je viens d’un milieu modeste, éloigné des sphères artistiques et du design.</p>
+
+                            <p>Très tôt, j’ai dû me forger seul, développant une approche autodidacte nourrie de recherches, d’expérimentations et d’un apprentissage assidu à travers tutoriels et essais successifs.</p>
+
+                            <p>Initialement perfectionniste, j’ai appris à accorder à la matière une place d’expression propre, acceptant qu’un objet ne soit pas seulement le fruit d’une pensée rationnelle, mais aussi d’un dialogue vivant avec son environnement.</p>
+
+                            <p>Mon parcours académique a débuté à Saint-Luc Tournai, section volume, où j’ai obtenu mon brevet d’art, avant de poursuivre mon évolution à l’ENSAV La Cambre en design industriel, une discipline qui me permet d’explorer pleinement cet équilibre entre réflexion et matérialité.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="boite1"></div>
+            </div>
+        <div class="slid1" id="products">
+            <div id="box">
+                <div class="gbox">
+                    <img src="images/photo9.JPG" alt="photo9.jpg">
+                    <img src="images/photo13.jpeg" alt="photo13">
+                </div>
+                <div class="dbox">
+                    <img src="images/photo14.jpeg" alt="photo14">
+                </div>
+            </div>
+        </div>
+        <div class="slide" id="contact"></div>
+        <script>
+            const burger = document.querySelector('#burger');
+            const menuMobile = document.querySelector('#menu-mobile');
+            const links = document.querySelectorAll('#menu-mobile nav ul li a')
+
+            burger.addEventListener('click', () => {
+                menuMobile.classList.toggle('open');
+            })
+
+            links.forEach(link => {
+                link.addEventListener('click', () => {
+                        menuMobile.classList.remove('open');
+                    }
+                )
+            })
+
+        </script>
+    </body>
+</html>
