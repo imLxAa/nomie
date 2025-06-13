@@ -460,7 +460,23 @@ footer {
         grid-template-columns: 1fr 1fr;
     }
 
+     #b1{
+         padding-top: 100%;
+         padding-bottom: 100%;
+         grid-column: span 2;
+         background-position: center top;
+     }
+
+     #b2{
+         padding-top: 100%;
+         padding-bottom: 100%;
+         grid-column: span 2;
+     background-position: center top;
+     }
+
     #b3{
+        padding-top: 100%;
+        padding-bottom: 100%;
         grid-column: span 2;
         background-position: center top;
     }
